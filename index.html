@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="brand-image-container">
+        <img src="./images/logo.svg" alt="brand-logo" class="brand-logo" />
+      </div>
+      <div class="main-image-container">
+        <picture class="hero-picture">
+          <source
+            srcset="images/hero-desktop.jpg"
+            media="(min-width: 1000px)"
+          />
+          <img
+            src="images/hero-mobile.jpg"
+            alt="Hero image of a young lady holding her arm up showing some jewelry on her wrist. The lady stands in front of a bush"
+          />
+        </picture>
+      </div>
+      <div class="description-container">
+        <h1 class="message">
+          <span>We're</span> <br />
+          coming <br />
+          soon
+        </h1>
+        <p class="summary">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form action="" class="email-form">
+          <div class="email-container">
+            <input
+              type="text"
+              class="email-input"
+              placeholder="Email address"
+            />
+            <button class="submit">
+              <img src="./images/icon-arrow.svg" alt="" class="submit-image" />
+            </button>
+            <div class="error-logo">
+              <img src="./images/icon-error.svg" alt="" class="error-image" />
+            </div>
+            <p class="error-message hidden" id="error_id">Please provide a vaild email</p>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

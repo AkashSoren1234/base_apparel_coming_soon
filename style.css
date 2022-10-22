@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&display=swap");
+
+/* font-family: 'Josefin Sans', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* font-family: 'Poppins', sans-serif; */
+body {
+  font-family: "Josefin Sans", sans-serif;
+  height: 100%;
+  /* background-color: rgb(174, 34, 34); */
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%) 0%,
+    hsl(0, 100%, 98%) 100%
+  );
+}
+
+.container {
+  min-width: 375px;
+  min-height: 100vh;
+}
+
+.brand-image-container {
+  padding: 2rem;
+  grid-area: "brand-image";
+}
+
+.main-image-container {
+  width: 100%;
+  grid-area: "main-image";
+}
+
+.main-image-container img {
+  margin: 0;
+  background-color: red;
+  width: 100%;
+}
+
+.description-container {
+  grid-area: "description";
+  /* background-color: blueviolet; */
+  min-width: 300px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.message {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.message span {
+  color: hsl(0, 36%, 70%);
+  font-weight: lighter;
+}
+
+.summary {
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 5rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  color: hsl(0, 36%, 70%);
+}
+
+.email-container {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background-color: aqua; */
+  margin: 0 auto;
+  width: 25rem;
+}
+
+.email-input {
+  height: 2rem;
+  width: 80%;
+  border-radius: 50px;
+  border: 1px solid #ffc5dd;
+  padding-left: 1.4rem;
+}
+
+.submit {
+  position: absolute;
+  height: 2rem;
+  width: 3rem;
+  background-color: hsl(0, 74%, 74%);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-style: none;
+  border-radius: 50px;
+  right: 10%;
+}
+
+.submit:active {
+  translate: 2%;
+}
+
+.error-logo {
+  position: absolute;
+  right: 28%;
+  width: 20px;
+  height: 2.2rem;
+  top: 20%;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.error-image {
+  height: 50%;
+}
+
+.error-message {
+  font-weight: 400;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  padding-left: 3.5rem;
+  color: hsla(0, 79%, 37%, 0.934);
+  padding-bottom: 1rem;
+  position: absolute;
+  left: 3%;
+  top: 100%;
+}
+
+.error-border {
+    border: 1px solid hsl(0, 93%, 68%);
+}
+
+.email-input::placeholder {
+  color: hsl(0, 57%, 85%);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url(./images/bg-pattern-desktop.svg);
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 20% 80%;
+  }
+
+  .main-image-container {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .brand-image-container {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    padding-left: 3.5rem;
+  }
+
+  .description-container {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    /* background-color: #ffc5dd; */
+    margin-top: 0;
+    
+  }
+
+  .message {
+    text-align: left;
+    font-size: 4rem; 
+    padding-left: 3.5rem;
+
+  }
+
+  .summary {
+    font-size: 1.4rem;
+    text-align: left;
+    padding-left: 3.5rem;
+    padding-right: 9rem;
+    max-width: 46rem;
+  }
+
+  .email-container {
+    margin-left: 0;
+    height: 3rem;
+    width: 37rem;
+  }
+
+  .error-logo {
+    top: 30%;
+    right: 20%;
+  }
+
+  .error-message {
+    font-size: 1rem;
+  }
+
+
+  .hero-picture {
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 60%;
+  }
+
+  .hero-picture img {
+    min-height: 100%;
+  }
+
+}
