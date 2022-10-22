@@ -78,7 +78,7 @@ body {
 .summary {
   font-weight: 400;
   font-size: 0.8rem;
-  padding: 5rem;
+  padding: 6rem;
   padding-bottom: 2rem;
   padding-top: 1rem;
   text-align: center;
@@ -91,9 +91,10 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* background-color: aqua; */
+  background-color: aqua;
   margin: 0 auto;
-  width: 25rem;
+  width: 20rem;
+  
 }
 
 .email-input {
