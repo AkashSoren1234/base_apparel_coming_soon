@@ -8,9 +8,10 @@
   box-sizing: border-box;
 }
 
-
 /* font-family: 'Poppins', sans-serif; */
 body {
+  overflow-y: auto;
+  scrollbar-gutter: stable;
   font-family: "Josefin Sans", sans-serif;
   height: 100%;
   /* background-color: rgb(174, 34, 34); */
@@ -22,6 +23,9 @@ body {
 }
 
 .container {
+  position: absolute;
+  right: 0;
+  left: 0;
   min-width: 375px;
   min-height: 100vh;
 }
@@ -141,7 +145,7 @@ body {
 }
 
 .error-border {
-    border: 1px solid hsl(0, 93%, 68%);
+  border: 1px solid hsl(0, 93%, 68%);
 }
 
 .email-input::placeholder {
@@ -175,14 +179,12 @@ body {
     grid-row: 2/3;
     /* background-color: #ffc5dd; */
     margin-top: 0;
-    
   }
 
   .message {
     text-align: left;
-    font-size: 4rem; 
+    font-size: 4rem;
     padding-left: 3.5rem;
-
   }
 
   .summary {
@@ -208,7 +210,6 @@ body {
     font-size: 1rem;
   }
 
-
   .hero-picture {
     position: absolute;
     background-color: red;
@@ -221,5 +222,4 @@ body {
   .hero-picture img {
     min-height: 100%;
   }
-
 }
