@@ -91,9 +91,9 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: aqua;
+  /* background-color: aqua; */
   margin: 0 auto;
-  width: 15rem;
+  width: 20rem;
   
 }
 
